@@ -75,7 +75,9 @@
                 <a-cylinder src="#map" position="0 1 0" rotation="0 -20 0" height="12" radius="8" theta-start="120" theta-length="150" open-ended="true" side="double">
                     <a-image src="#title-world" position="1 1.5 -3" rotation="0 -30 0" onclick="toScene1()"
                     event-set__enter="_event: mouseenter; _target: #world-hover; visible: true"
-                    event-set__leave="_event: mouseleave; _target: #world-hover; visible: false">
+                    event-set__enter2="_event: mouseenter; scale: 1.1 1.1 1"
+                    event-set__leave="_event: mouseleave; _target: #world-hover; visible: false"
+                    event-set__leave2="_event: mouseleave; scale: 1 1 1">
                         <a-entity id="world-hover" visible="false">
                             <a-image src="#thumb-world" position="1.1 0 0"></a-image>
                             <a-image src="#place-world" position="1.1 -0.8 0" scale="0.8 0.25 1"></a-image>
@@ -83,7 +85,9 @@
                     </a-image>
                     <a-image src="#title-forest" position="2 -1 -3" rotation="-15 -30 0" onclick="toScene2()"
                     event-set__enter="_event: mouseenter; _target: #forest-hover; visible: true"
-                    event-set__leave="_event: mouseleave; _target: #forest-hover; visible: false">
+                    event-set__enter2="_event: mouseenter; scale: 1.1 1.1 1"
+                    event-set__leave="_event: mouseleave; _target: #forest-hover; visible: false"
+                    event-set__leave2="_event: mouseleave; scale: 1 1 1">
                         <a-entity id="forest-hover" visible="false">
                             <a-image src="#thumb-forest" position="1.1 0 0"></a-image>
                             <a-image src="#place-forest" position="1.1 0.6 0" scale="0.8 0.3 1"></a-image>
@@ -92,7 +96,9 @@
                     </a-image>
                     <a-image src="#title-rocks" position="-2 2 -3" rotation="15 30 0" onclick="toScene3()"
                     event-set__enter="_event: mouseenter; _target: #rocks-hover; visible: true"
-                    event-set__leave="_event: mouseleave; _target: #rocks-hover; visible: false">
+                    event-set__enter2="_event: mouseenter; scale: 1.1 1.1 1"
+                    event-set__leave="_event: mouseleave; _target: #rocks-hover; visible: false"
+                    event-set__leave2="_event: mouseleave; scale: 1 1 1">
                         <a-entity id="rocks-hover" visible="false">
                             <a-image src="#thumb-rocks" position="-1.1 0 0"></a-image>
                             <a-image src="#place-rocks" position="-1.1 0.6 0" scale="0.9 0.3 1"></a-image>
@@ -101,7 +107,9 @@
                     </a-image>
                     <a-image src="#title-water" position="-3 -1 -1" rotation="-15 60 0" onclick="toScene4()"
                     event-set__enter="_event: mouseenter; _target: #water-hover; visible: true"
-                    event-set__leave="_event: mouseleave; _target: #water-hover; visible: false">
+                    event-set__enter2="_event: mouseenter; scale: 1.1 1.1 1"
+                    event-set__leave="_event: mouseleave; _target: #water-hover; visible: false"
+                    event-set__leave2="_event: mouseleave; scale: 1 1 1">
                         <a-entity id="water-hover" visible="false">
                             <a-image src="#thumb-water" position="-1.1 0 0"></a-image>
                             <a-image src="#place-water" position="-1.1 -1 0" scale="0.8 0.6 1"></a-image>
@@ -116,7 +124,9 @@
                 <a-sky src="#sphere-world" rotation="0 100 0">
                     <a-image src="#title-world" position="-6 4.2 1.5" rotation="0 -35 0" scale="2 2 2"></a-image>
                     <a-image src="#desc-world" position="-5 1 4" rotation="0 -45 0" scale="8 4.5 1"></a-image>
-                    <a-image src="#back" position="-5.2 3 -0.6" rotation="-30 -90 0" scale="2 0.5 1" onclick="toScene0()"></a-image>
+                    <a-image src="#back" position="-5.2 3 -0.6" rotation="-30 -90 0" scale="2 0.5 1" onclick="toScene0()"
+                    event-set__enter="_event: mouseenter; scale: 2.1 0.6 1"
+                    event-set__leave="_event: mouseleave; scale: 2 0.5 1" ></a-image>
                 </a-sky>
             </a-entity>
 
@@ -125,7 +135,9 @@
                 <a-sky src="#sphere-forest" rotation="0 120 0">
                     <a-image src="#title-forest" position="-3.6 3.7 6.7" rotation="0 0 0" scale="2 2 2"></a-image>
                     <a-image src="#desc-forest" position="-0.6 0 6.7" rotation="0 0 0" scale="8 4.5 1"></a-image>
-                    <a-image src="#back" position="-5.2 1.8 4.4" rotation="0 -45 0" scale="2 0.5 1" onclick="toScene0()"></a-image>
+                    <a-image src="#back" position="-5.2 1.8 4.4" rotation="0 -45 0" scale="2 0.5 1" onclick="toScene0()"
+                    event-set__enter="_event: mouseenter; scale: 2.1 0.6 1"
+                    event-set__leave="_event: mouseleave; scale: 2 0.5 1" ></a-image>
                     <!-- Label 0 -->
                     <a-image src="#label-forest-0" position="-2 -4 6.8" rotation="0 0 0" scale="4 2 1"></a-image>
                     <!-- Label 1 -->
@@ -152,7 +164,9 @@
                 <a-sky src="#sphere-rocks" rotation="0 180 0">
                     <a-image src="#title-rocks" position="-2.6 4.6 6.9" rotation="0 0 0" scale="2 2 2"></a-image>
                     <a-image src="#desc-rocks" position="0.22 1 6.8" rotation="0 0 0" scale="8 4.5 1"></a-image>
-                    <a-image src="#back" position="-4 2.2 3.6" rotation="0 -45 0" scale="2 0.5 1" onclick="toScene0()"></a-image>
+                    <a-image src="#back" position="-4 2.2 3.6" rotation="0 -45 0" scale="2 0.5 1" onclick="toScene0()"
+                    event-set__enter="_event: mouseenter; scale: 2.1 0.6 1"
+                    event-set__leave="_event: mouseleave; scale: 2 0.5 1" ></a-image>
                     <!-- Label 0 -->
                     <a-image src="#label-rocks-0" position="7.7 -4 5" rotation="0 90 0" scale="4 2 1"></a-image>
                     <!-- Label 1 -->
@@ -167,7 +181,9 @@
                 <a-sky src="#sphere-water" rotation="0 -45 0">
                     <a-image src="#title-water" position="8.1 3.7 3.2" rotation="0 90 0" scale="2 2 2"></a-image>
                     <a-image src="#desc-water" position="7.7 0 0.2" rotation="0 90 0" scale="8 4.5 1"></a-image>
-                    <a-image src="#back" position="4.5 2 4" rotation="-30 60 0" scale="2 0.5 1" onclick="toScene0()"></a-image>
+                    <a-image src="#back" position="4.5 2 4" rotation="-30 60 0" scale="2 0.5 1" onclick="toScene0()"
+                    event-set__enter="_event: mouseenter; scale: 2.1 0.6 1"
+                    event-set__leave="_event: mouseleave; scale: 2 0.5 1" ></a-image>
                     <!-- Label 0 -->
                     <a-image src="#label-water-0" position="7.7 -4 2.2" rotation="0 90 0" scale="4 2 1"></a-image>
                     <!-- Label 1 -->
